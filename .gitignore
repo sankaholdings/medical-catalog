@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+
+# Image originals (backups)
+*.orig
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor & local tools
+.vscode/
+.claude/
+*.swp
+
+# PDF output
+*.pdf
+
+# CSV (internal draft)
+*.csv

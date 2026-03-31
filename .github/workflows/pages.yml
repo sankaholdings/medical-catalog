@@ -1,0 +1,66 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  # Allow manual trigger from Actions tab
+  workflow_dispatch:
+
+# Allow only one concurrent deployment
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  # ── Build & upload static files ──────────────────────────
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload entire repository (pure static site — no build step needed)
+          path: '.'
+
+  # ── Deploy to GitHub Pages ───────────────────────────────
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+  # ── Optional: Generate PDFs and attach as release assets ─
+  # Uncomment the job below to auto-generate PDFs on each push.
+  #
+  # generate-pdfs:
+  #   runs-on: ubuntu-latest
+  #   needs: deploy
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - uses: actions/setup-node@v4
+  #       with:
+  #         node-version: '20'
+  #     - run: npm install
+  #     - run: npm run pdf
+  #     - uses: actions/upload-artifact@v4
+  #       with:
+  #         name: catalog-pdfs
+  #         path: dist/*.pdf
+  #         retention-days: 30

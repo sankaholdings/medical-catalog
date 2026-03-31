@@ -1,0 +1,19 @@
+{
+  "name": "sanka-medical-catalog",
+  "version": "1.0.0",
+  "description": "Sanka Holdings Medical Catalog — static site with multilingual PDF export",
+  "private": true,
+  "scripts": {
+    "pdf": "node scripts/pdf.js",
+    "pdf:ja": "node scripts/pdf.js ja",
+    "pdf:zh": "node scripts/pdf.js zh-cn",
+    "pdf:en": "node scripts/pdf.js en",
+    "serve": "npx serve . -p 8080"
+  },
+  "devDependencies": {
+    "puppeteer": "^22.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

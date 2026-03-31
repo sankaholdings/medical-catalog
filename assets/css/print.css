@@ -1,0 +1,332 @@
+/* ============================================================
+   Sanka Holdings Medical Catalog — A4 Print / PDF Styles
+   ============================================================ */
+
+@media print {
+
+  /* ── Page Setup ─────────────────────────────────────────── */
+  @page {
+    size: A4 portrait;
+    margin: 15mm 14mm 18mm 14mm;
+
+    @top-center {
+      content: "さんかホールディングス株式会社  Medical Catalog";
+      font-size: 8pt;
+      color: #999;
+      font-family: 'Noto Serif JP', serif;
+    }
+    @bottom-right {
+      content: counter(page) " / " counter(pages);
+      font-size: 8pt;
+      color: #999;
+    }
+  }
+
+  /* ── Hide Non-Print Elements ─────────────────────────────── */
+  .site-header,
+  .site-nav,
+  .btn-print,
+  .lang-switcher {
+    display: none !important;
+  }
+
+  /* ── Base Print Reset ────────────────────────────────────── */
+  *,
+  *::before,
+  *::after {
+    box-shadow: none !important;
+    text-shadow: none !important;
+    transition: none !important;
+    animation: none !important;
+  }
+
+  html, body {
+    background: #fff !important;
+    color: #111 !important;
+    font-size: 9.5pt;
+    font-family: 'Noto Serif JP', 'Hiragino Mincho ProN', 'Yu Mincho', Georgia, serif;
+    line-height: 1.6;
+  }
+
+  body.lang-zh {
+    font-family: 'Noto Serif SC', 'SimSun', 'Source Han Serif SC', Georgia, serif;
+  }
+  body.lang-en {
+    font-family: 'Cormorant Garamond', 'Garamond', Georgia, serif;
+  }
+
+  /* ── Layout ──────────────────────────────────────────────── */
+  .site-main {
+    margin-left: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  /* ── Intro Hero ─────────────────────────────────────────── */
+  .intro-hero {
+    min-height: auto !important;
+    padding: 40pt 0 32pt !important;
+    background: #fff !important;
+    /* No break-after: use break-before on following sections to avoid blank pages */
+  }
+  .intro-hero::before,
+  .intro-hero::after { display: none !important; }
+
+  .intro-hero__eyebrow {
+    color: #7a5c1a;
+    font-size: 8pt;
+    letter-spacing: 0.15em;
+  }
+  .intro-hero__eyebrow::before { background: #c9a84c; }
+
+  .intro-hero__title {
+    font-size: 24pt;
+    color: #111;
+    font-weight: 400;
+  }
+  .intro-hero__title em { color: #7a5c1a; font-style: italic; }
+
+  .intro-hero__sub {
+    font-size: 9.5pt;
+    color: #444;
+  }
+
+  .intro-hero__stats { gap: 24pt; }
+  .stat-block__num { font-size: 28pt; color: #7a5c1a; }
+  .stat-block__label { font-size: 8pt; color: #666; }
+
+  /* ── Intro Service ──────────────────────────────────────── */
+  .intro-service {
+    background: #fff !important;
+    padding: 32pt 0 !important;
+    page-break-before: always;
+    break-before: page;
+  }
+  .intro-service::before { display: none !important; }
+
+  /* ── Section Headers ────────────────────────────────────── */
+  .section-header__number { color: #ddd; font-size: 40pt; }
+  .section-header__title { color: #111; font-size: 16pt; }
+  .section-header__subtitle { color: #7a5c1a; font-size: 7.5pt; letter-spacing: 0.12em; }
+
+  /* ── Flow Steps ─────────────────────────────────────────── */
+  .flow-steps { margin: 24pt 0; }
+  .flow-step {
+    background: #fafafa !important;
+    border-color: #ddd !important;
+    padding: 14pt 12pt;
+  }
+  .flow-step__num { color: #aaa; font-size: 20pt; }
+  .flow-step__title { color: #7a5c1a; }
+  .flow-step__desc { color: #444; }
+
+  /* ── Feature Cards ──────────────────────────────────────── */
+  .feature-card {
+    background: #fafafa !important;
+    border-color: #ddd !important;
+  }
+  .feature-card__icon {
+    background: #f5f0e8 !important;
+    border-color: #ddd !important;
+  }
+  .feature-card__title { color: #7a5c1a; }
+  .feature-card__desc { color: #444; }
+
+  /* ── Chapter Sections ───────────────────────────────────── */
+  .chapter-section {
+    background: #fff !important;
+    padding: 28pt 0 24pt !important;
+    page-break-before: always;
+    break-before: page;
+  }
+  .chapter-section::before { display: none !important; }
+
+  /* Chapter Header */
+  .chapter-header {
+    border-bottom-color: #ccc;
+    margin-bottom: 28pt;
+    padding-bottom: 16pt;
+  }
+  .chapter-header__num { color: #ddd; font-size: 56pt; border-right-color: #ddd; }
+  .chapter-header__en { color: #7a5c1a; font-size: 7.5pt; }
+  .chapter-header__en::after { background: #aaa; }
+  .chapter-header__title { color: #111; font-size: 20pt; }
+  .chapter-header__desc { color: #444; font-size: 9pt; }
+
+  /* Clinic Badges */
+  .clinic-badge {
+    background: #f5f0e8 !important;
+    border-color: #c9a84c !important;
+    color: #7a5c1a !important;
+    font-size: 8pt;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+  .clinic-badge::before { color: #c9a84c; }
+
+  /* Menu Category */
+  .menu-category { margin-bottom: 24pt; page-break-inside: avoid; }
+  .menu-category__header { border-bottom-color: #ddd; margin-bottom: 12pt; }
+  .menu-category__num { color: #c9a84c; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  .menu-category__name { color: #111; font-size: 10.5pt; }
+
+  /* Menu Grid */
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10pt;
+  }
+
+  /* Menu Cards */
+  .menu-card {
+    background: #fafafa !important;
+    border-color: #ddd !important;
+    border-radius: 4pt;
+    padding: 12pt 10pt;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+  .menu-card--featured {
+    background: #f5f0e8 !important;
+    border-color: #c9a84c !important;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+  .menu-card__name { color: #111; font-size: 10pt; }
+  .menu-card__effect { color: #444; font-size: 8.5pt; }
+  .menu-card__footer { border-top-color: #e0d8c8; }
+
+  .clinic-tag {
+    background: #f5f0e8 !important;
+    border-color: #c9a84c !important;
+    color: #7a5c1a !important;
+    font-size: 7.5pt;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  /* ── Clinic card images ─────────────────────────────────── */
+  .clinic-card--has-img { padding: 0; }
+  .clinic-card__img {
+    display: block;
+    width: 100%;
+    height: 100pt;
+    object-fit: cover;
+    border-radius: 3pt 3pt 0 0;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+  .clinic-card--primary.clinic-card--has-img .clinic-card__img { height: 120pt; }
+  .clinic-card__body { padding: 10pt 10pt 12pt; }
+  .clinic-card:not(.clinic-card--has-img) { padding: 12pt 10pt; }
+  .clinic-card:not(.clinic-card--has-img) .clinic-card__body { padding: 0; }
+
+  /* ── Chapter hero image ─────────────────────────────────── */
+  .chapter-hero {
+    width: 100%;
+    height: 130pt;
+    border-radius: 3pt;
+    overflow: hidden;
+    margin-bottom: 20pt;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+  .chapter-hero__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 40%;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+  .chapter-hero::after { display: none; }  /* no overlay in print */
+
+  /* ── Clinic Directory ───────────────────────────────────── */
+  .clinic-directory {
+    background: #fff !important;
+    padding: 24pt 0 20pt !important;
+    page-break-before: always;
+    break-before: page;
+  }
+  .clinic-directory::before { display: none !important; }
+
+  /* Clinic directory: category grouping */
+  .clinic-dir-category {
+    margin-top: 20pt;
+  }
+  .clinic-dir-category + .clinic-dir-category {
+    margin-top: 20pt;
+    padding-top: 16pt;
+    border-top: 0.5pt solid #ddd;
+  }
+  .clinic-dir-category__header {
+    display: flex;
+    align-items: center;
+    gap: 10pt;
+    margin-bottom: 6pt;
+  }
+  .clinic-dir-category__num {
+    font-size: 7.5pt;
+    color: #c9a84c;
+    letter-spacing: 0.14em;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+  .clinic-dir-category__title {
+    font-size: 8pt;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #555;
+  }
+  .clinic-dir-category .clinic-grid {
+    margin-top: 8pt;
+  }
+  .clinic-card--primary {
+    border-color: #c9a84c !important;
+    border-left: 2pt solid #c9a84c !important;
+    padding-left: 9pt !important;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+  .clinic-card--primary .clinic-card__name {
+    font-size: 10pt;
+  }
+
+  .clinic-grid { grid-template-columns: repeat(3, 1fr); gap: 8pt; }
+  .clinic-card {
+    background: #fafafa !important;
+    border-color: #ddd !important;
+    padding: 12pt 10pt;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+  .clinic-card__location { color: #c9a84c; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  .clinic-card__name { color: #111; font-size: 9.5pt; }
+  .clinic-card__specialty { color: #444; }
+  .clinic-card__link {
+    color: #444;
+    font-size: 8pt;
+  }
+  /* Show full URL in print */
+  .clinic-card__link::after {
+    content: " (" attr(href) ")";
+    font-size: 7pt;
+    color: #666;
+    word-break: break-all;
+  }
+  .clinic-card__link svg { display: none; }
+
+  /* ── Footer ─────────────────────────────────────────────── */
+  .site-footer {
+    background: #fff !important;
+    border-top-color: #ddd !important;
+    padding: 16pt 0 8pt !important;
+    margin-top: 24pt;
+  }
+  .site-footer__brand,
+  .site-footer__copy { color: #666; font-size: 8pt; }
+
+  /* ── Intro watermark text ────────────────────────────────── */
+  .gold-line { background: #c9a84c; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  .gold-line--center { background: linear-gradient(90deg, transparent, #c9a84c, transparent); }
+
+} /* end @media print */
