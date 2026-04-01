@@ -948,9 +948,7 @@ img { max-width: 100%; display: block; }
   width: auto;
   display: block;
   margin: 0 auto;
-  /* Convert to gold (#c9a84c) via CSS filter */
-  filter: brightness(0) sepia(1) saturate(2.2) hue-rotate(8deg) brightness(0.88);
-  opacity: 0.88;
+  opacity: 0.92;
 }
 @media (max-width: 480px) {
   .lang-select-card__logo { height: 56px; }
