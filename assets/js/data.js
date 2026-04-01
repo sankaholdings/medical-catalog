@@ -418,7 +418,7 @@ const CLINICS = {
     nameShort:PROPER_NOUNS.clinicShort['luna'],
     specialty:{ ja: '精密健診・婦人科ドック', zh: '精密体检·妇科套餐', en: "Precision Checkup & Women's Health" },
     url: 'https://www.sanka-lunaclinic.com/',
-    image: { src: 'https://www.sanka-lunaclinic.com/wp-content/uploads/2025/04/main_img_01-2_2.jpg', alt: 'SANKA LUNA CLINIC — 院内' },
+    image: { src: '../assets/images/clinics/runa/main.jpg', webp: '../assets/images/clinics/runa/main.webp', alt: 'SANKA LUNA CLINIC — 院内' },
     gallery: [
       { src: 'https://www.sanka-lunaclinic.com/wp-content/uploads/2024/12/221212_2.jpg', alt: 'SANKA LUNA CLINIC — 受付' },
       { src: '../assets/images/clinics/runa/MRI.webp',                                   alt: 'SANKA LUNA CLINIC — MRI設備' },
