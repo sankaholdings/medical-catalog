@@ -446,9 +446,9 @@ const CLINICS = {
     url: 'https://www.heiwakinenclinic.com/',
     image: { src: '../assets/images/clinics/heiwa/main.jpg', webp: '../assets/images/clinics/heiwa/main.webp', alt: '平和記念公園鼻専門クリニック — 院内空間' },
     gallery: [
-      { src: 'https://www.heiwakinenclinic.com/wp-content/themes/heiwakinenclinic/assets/images/pic01.webp', alt: '平和記念公園鼻専門クリニック — 院内' },
-      { src: 'https://www.heiwakinenclinic.com/wp-content/themes/heiwakinenclinic/assets/images/building.webp', alt: '平和記念公園鼻専門クリニック — 外観' },
-      { src: 'https://www.heiwakinenclinic.com/wp-content/themes/heiwakinenclinic/assets/images/pic03.webp', alt: '平和記念公園鼻専門クリニック — 手術' },
+      { src: '../assets/images/clinics/heiwa/exam.webp',         alt: '平和記念公園鼻専門クリニック — 診察' },
+      { src: '../assets/images/clinics/heiwa/surgery-room.webp', alt: '平和記念公園鼻専門クリニック — 手術室' },
+      { src: '../assets/images/clinics/heiwa/director.webp',     alt: '平和記念公園鼻専門クリニック — 院長' },
     ],
     chapters: ['ent'],
   },
