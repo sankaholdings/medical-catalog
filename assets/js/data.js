@@ -432,9 +432,9 @@ const CLINICS = {
     url: 'https://carproad.com/',
     image: { src: '../assets/images/clinics/carproad/main.jpg', webp: '../assets/images/clinics/carproad/main.webp', alt: 'カープロード鼻専門クリニック — 院内空間' },
     gallery: [
-      { src: 'https://carproad.com/wp-content/uploads/2022/11/slidephoto_01-1.jpg', alt: 'カープロード鼻専門クリニック — 外観' },
-      { src: 'https://carproad.com/wp-content/uploads/2022/11/slidephoto_02-1.jpg', alt: 'カープロード鼻専門クリニック — 受付' },
-      { src: 'https://carproad.com/wp-content/uploads/2025/09/20250906_dr_yamato3.jpg', alt: 'カープロード鼻専門クリニック — 院長' },
+      { src: '../assets/images/clinics/carproad/examroom.webp', alt: 'カープロード鼻専門クリニック — 診察室' },
+      { src: '../assets/images/clinics/carproad/uketsuke.webp', alt: 'カープロード鼻専門クリニック — 受付' },
+      { src: '../assets/images/clinics/carproad/director.webp', alt: 'カープロード鼻専門クリニック — 院長' },
     ],
     chapters: ['ent'],
   },
