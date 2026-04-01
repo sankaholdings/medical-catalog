@@ -268,7 +268,7 @@
           <div class="site-header__logo-mark">S</div>
           <div class="site-header__name">
             <strong>${t(CATALOG_CONFIG.company)}</strong>
-            ${t(CATALOG_CONFIG.tagline)}
+            <span class="site-header__tagline">${t(CATALOG_CONFIG.tagline)}</span>
           </div>
         </div>
         <div class="site-header__actions">

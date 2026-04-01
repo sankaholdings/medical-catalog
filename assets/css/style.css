@@ -1153,9 +1153,11 @@ html, body { overflow-x: hidden; }
   .lang-btn__code { font-size: 24px; margin-bottom: 0; }
   .lang-btn__native { display: none; }
 
-  /* Header: hide company name sub-text on very small screens */
-  .site-header__name { font-size: 12px; }
-  .site-header__name strong { font-size: 13px; }
+  /* Header: prevent brand from overflowing into actions */
+  .site-header__brand { min-width: 0; flex-shrink: 1; overflow: hidden; }
+  .site-header__name { font-size: 12px; min-width: 0; overflow: hidden; }
+  .site-header__name strong { font-size: 13px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: block; }
+  .site-header__tagline { display: none; }
 
   /* Lang switcher: bigger tap targets */
   .lang-switcher { padding: 5px 10px; }
