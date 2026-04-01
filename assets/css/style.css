@@ -745,6 +745,22 @@ img { max-width: 100%; display: block; }
 .clinic-card__link:hover { color: var(--gold); }
 .clinic-card__link svg { width: 11px; height: 11px; }
 
+/* ── Clinic gallery strip ───────────────────────────────── */
+.clinic-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  background: var(--bg-base);
+}
+.clinic-gallery__img {
+  width: 100%;
+  height: 72px;
+  object-fit: cover;
+  display: block;
+  transition: opacity var(--transition);
+}
+.clinic-gallery__img:hover { opacity: 0.82; }
+
 /* ── Clinic card image ───────────────────────────────────── */
 .clinic-card--has-img {
   padding: 0;  /* image bleeds to edges; body has its own padding */
@@ -948,6 +964,9 @@ img { max-width: 100%; display: block; }
   width: auto;
   display: block;
   margin: 0 auto;
+  /* Green → Gold: invert first (white bg→black, green→magenta),
+     then hue-rotate to shift magenta(300°) to gold(40°) */
+  filter: invert(1) hue-rotate(100deg) saturate(1.5) brightness(0.85);
   opacity: 0.92;
 }
 @media (max-width: 480px) {

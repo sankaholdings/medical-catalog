@@ -369,6 +369,10 @@ const CLINICS = {
     specialty:{ ja: '美容医療・再生医療', zh: '美容医疗·再生医疗', en: 'Aesthetic & Regenerative Medicine' },
     url: 'https://cococell-clinic.or.jp/',
     image: { src: 'https://cococell-clinic.or.jp/lib/img/top_slide_img01.jpg', alt: 'CoCoセルクリニック — 院内' },
+    gallery: [
+      { src: 'https://cococell-clinic.or.jp/lib/img/top_slide_img02.jpg', alt: 'CoCoセルクリニック — 施術エリア' },
+      { src: 'https://cococell-clinic.or.jp/lib/img/top_slide_img03.jpg', alt: 'CoCoセルクリニック — 院内空間' },
+    ],
     chapters: ['regenerative', 'aesthetic'],
   },
   'tenjin': {
@@ -387,6 +391,10 @@ const CLINICS = {
     specialty:{ ja: '耳鼻咽喉科（総合）・日帰り手術', zh: '耳鼻喉科（综合）·日间手术', en: 'ENT (Comprehensive) & Same-Day Surgery' },
     url: 'https://ssc-jibi.com/',
     image: { src: 'https://ssc-jibi.com/wp-content/uploads/image4.png', alt: '坂口耳鼻咽喉科 — 院内' },
+    gallery: [
+      { src: 'https://ssc-jibi.com/wp-content/uploads/image5.png', alt: '坂口耳鼻咽喉科 — 診療室' },
+      { src: 'https://ssc-jibi.com/wp-content/uploads/image9.png', alt: '坂口耳鼻咽喉科 — 設備' },
+    ],
     chapters: ['ent'],
   },
   'yahata': {
@@ -396,6 +404,10 @@ const CLINICS = {
     specialty:{ ja: '耳鼻咽喉科（鼻専門）・日帰り手術', zh: '耳鼻喉科（鼻部专科）·日间手术', en: 'ENT (Nasal Specialist) & Same-Day Surgery' },
     url: 'https://sanka.or.jp/otolaryngology/',
     image: { src: '../assets/images/clinics/yahata/main.jpg', webp: '../assets/images/clinics/yahata/main.webp', alt: 'さんか八幡西クリニック — 手術室' },
+    gallery: [
+      { src: 'https://sanka.or.jp/otolaryngology/wp-content/uploads/2020/05/9e3472040ec888f442b95d09c23d5548-1-1024x644-1.jpg', alt: 'さんか八幡西クリニック — 院内設備' },
+      { src: 'https://sanka.or.jp/otolaryngology/wp-content/uploads/2020/05/operoom-1024x731-1-1-2.jpg', alt: 'さんか八幡西クリニック — 手術室' },
+    ],
     chapters: ['ent'],
   },
   'luna': {
@@ -405,6 +417,11 @@ const CLINICS = {
     specialty:{ ja: '精密健診・婦人科ドック', zh: '精密体检·妇科套餐', en: "Precision Checkup & Women's Health" },
     url: 'https://www.sanka-lunaclinic.com/',
     image: { src: 'https://www.sanka-lunaclinic.com/wp-content/uploads/2025/04/main_img_01-2_2.jpg', alt: 'SANKA LUNA CLINIC — 院内' },
+    gallery: [
+      { src: 'https://www.sanka-lunaclinic.com/wp-content/uploads/2024/12/221212_2.jpg', alt: 'SANKA LUNA CLINIC — 受付' },
+      { src: 'https://www.sanka-lunaclinic.com/wp-content/uploads/2025/04/cf_01-2-1024x682.jpg', alt: 'SANKA LUNA CLINIC — エントランス' },
+      { src: 'https://www.sanka-lunaclinic.com/wp-content/uploads/2025/03/221212_6-1024x683.jpg', alt: 'SANKA LUNA CLINIC — 検査設備' },
+    ],
     chapters: ['checkup'],
   },
   'carproad': {
@@ -414,6 +431,11 @@ const CLINICS = {
     specialty:{ ja: '耳鼻咽喉科（鼻専門）・日帰り手術', zh: '耳鼻喉科（鼻部专科）·日间手术', en: 'ENT (Nasal Specialist) & Same-Day Surgery' },
     url: 'https://carproad.com/',
     image: { src: '../assets/images/clinics/carproad/main.jpg', webp: '../assets/images/clinics/carproad/main.webp', alt: 'カープロード鼻専門クリニック — 院内空間' },
+    gallery: [
+      { src: 'https://carproad.com/wp-content/uploads/2022/11/slidephoto_01-1.jpg', alt: 'カープロード鼻専門クリニック — 外観' },
+      { src: 'https://carproad.com/wp-content/uploads/2022/11/slidephoto_02-1.jpg', alt: 'カープロード鼻専門クリニック — 受付' },
+      { src: 'https://carproad.com/wp-content/uploads/2025/09/20250906_dr_yamato3.jpg', alt: 'カープロード鼻専門クリニック — 院長' },
+    ],
     chapters: ['ent'],
   },
   'heiwa': {
@@ -423,6 +445,11 @@ const CLINICS = {
     specialty:{ ja: '耳鼻咽喉科（鼻専門）・日帰り手術', zh: '耳鼻喉科（鼻部专科）·日间手术', en: 'ENT (Nasal Specialist) & Same-Day Surgery' },
     url: 'https://www.heiwakinenclinic.com/',
     image: { src: '../assets/images/clinics/heiwa/main.jpg', webp: '../assets/images/clinics/heiwa/main.webp', alt: '平和記念公園鼻専門クリニック — 院内空間' },
+    gallery: [
+      { src: 'https://www.heiwakinenclinic.com/wp-content/themes/heiwakinenclinic/assets/images/pic01.webp', alt: '平和記念公園鼻専門クリニック — 院内' },
+      { src: 'https://www.heiwakinenclinic.com/wp-content/themes/heiwakinenclinic/assets/images/building.webp', alt: '平和記念公園鼻専門クリニック — 外観' },
+      { src: 'https://www.heiwakinenclinic.com/wp-content/themes/heiwakinenclinic/assets/images/pic03.webp', alt: '平和記念公園鼻専門クリニック — 手術' },
+    ],
     chapters: ['ent'],
   },
 };

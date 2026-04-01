@@ -198,6 +198,16 @@
     return `<img class="${cssClass}" src="${image.src}" alt="${image.alt}" loading="lazy">`;
   }
 
+  /* ── Clinic Gallery Strip ───────────────────────────────── */
+  function renderClinicGallery(id) {
+    const c = CLINICS[id];
+    if (!c || !c.gallery || c.gallery.length === 0) return '';
+    const imgs = c.gallery.map(img =>
+      `<img class="clinic-gallery__img" src="${img.src}" alt="${img.alt}" loading="lazy">`
+    ).join('');
+    return `<div class="clinic-gallery">${imgs}</div>`;
+  }
+
   /* ── Clinic Card ────────────────────────────────────────── */
   function renderClinicCard(id, isPrimary) {
     const c = CLINICS[id];
@@ -206,6 +216,7 @@
     return `
       <div class="clinic-card${isPrimary ? ' clinic-card--primary' : ''}${c.image ? ' clinic-card--has-img' : ''}">
         ${imgHtml}
+        ${renderClinicGallery(id)}
         <div class="clinic-card__body">
           <div class="clinic-card__location">${t(c.location)}</div>
           <div class="clinic-card__name">${t(c.name)}</div>

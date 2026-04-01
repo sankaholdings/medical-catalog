@@ -203,6 +203,9 @@
     -webkit-print-color-adjust: exact;
   }
 
+  /* ── Clinic gallery strip: hidden in print ──────────────── */
+  .clinic-gallery { display: none; }
+
   /* ── Clinic card images ─────────────────────────────────── */
   .clinic-card--has-img { padding: 0; }
   .clinic-card__img {
