@@ -421,8 +421,8 @@ const CLINICS = {
     image: { src: 'https://www.sanka-lunaclinic.com/wp-content/uploads/2025/04/main_img_01-2_2.jpg', alt: 'SANKA LUNA CLINIC — 院内' },
     gallery: [
       { src: 'https://www.sanka-lunaclinic.com/wp-content/uploads/2024/12/221212_2.jpg', alt: 'SANKA LUNA CLINIC — 受付' },
-      { src: 'https://www.sanka-lunaclinic.com/wp-content/uploads/2025/04/cf_01-2-1024x682.jpg', alt: 'SANKA LUNA CLINIC — エントランス' },
-      { src: 'https://www.sanka-lunaclinic.com/wp-content/uploads/2025/03/221212_6-1024x683.jpg', alt: 'SANKA LUNA CLINIC — 検査設備' },
+      { src: '../assets/images/clinics/runa/MRI.webp',                                   alt: 'SANKA LUNA CLINIC — MRI設備' },
+      { src: '../assets/images/clinics/runa/director.webp',                               alt: 'SANKA LUNA CLINIC — 院長' },
     ],
     chapters: ['checkup'],
   },
