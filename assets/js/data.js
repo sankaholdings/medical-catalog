@@ -394,6 +394,7 @@ const CLINICS = {
     gallery: [
       { src: 'https://ssc-jibi.com/wp-content/uploads/image5.png', alt: '坂口耳鼻咽喉科 — 診療室' },
       { src: 'https://ssc-jibi.com/wp-content/uploads/image9.png', alt: '坂口耳鼻咽喉科 — 設備' },
+      { src: '../assets/images/clinics/ssc/director.webp',          alt: '坂口耳鼻咽喉科 — 院長' },
     ],
     chapters: ['ent'],
   },
@@ -406,7 +407,8 @@ const CLINICS = {
     image: { src: '../assets/images/clinics/yahata/main.jpg', webp: '../assets/images/clinics/yahata/main.webp', alt: 'さんか八幡西クリニック — 手術室' },
     gallery: [
       { src: 'https://sanka.or.jp/otolaryngology/wp-content/uploads/2020/05/9e3472040ec888f442b95d09c23d5548-1-1024x644-1.jpg', alt: 'さんか八幡西クリニック — 院内設備' },
-      { src: 'https://sanka.or.jp/otolaryngology/wp-content/uploads/2020/05/operoom-1024x731-1-1-2.jpg', alt: 'さんか八幡西クリニック — 手術室' },
+      { src: 'https://sanka.or.jp/otolaryngology/wp-content/uploads/2020/05/operoom-1024x731-1-1-2.jpg',                       alt: 'さんか八幡西クリニック — 手術室' },
+      { src: '../assets/images/clinics/yahata/director.webp',                                                                   alt: 'さんか八幡西クリニック — 院長' },
     ],
     chapters: ['ent'],
   },
